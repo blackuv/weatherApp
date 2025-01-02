@@ -16,7 +16,7 @@ const target = 'hyderabad';
 
 async function fetchData(target){
     try {
-        let url = `http://api.weatherapi.com/v1/current.json?key=339e96365e76443785a120219241606&q=${target}&aqi=no`;
+        let url = `https://api.weatherapi.com/v1/current.json?key=339e96365e76443785a120219241606&q=${target}&aqi=no`;
         //fetch the data
         const response = await fetch(url); // await so that fetch can be completed
         const data = await response.json();
